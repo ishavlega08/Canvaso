@@ -14,10 +14,15 @@
   "type": "commonjs",
   "devDependencies": {
     "@repo/typescript-config": "workspace:*",
+    "@repo/backend-common": "workspace:*",
+    "@repo/common": "workspace:*",
     "@types/express": "^5.0.1",
+    "@types/jsonwebtoken": "^9.0.9",
     "typescript": "^5.8.2"
   },
   "dependencies": {
-    "express": "^5.1.0"
+    "@repo/db": "workspace:*",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2"
   }
 }
