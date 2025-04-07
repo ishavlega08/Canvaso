@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -18,7 +19,7 @@ export default function HeroSection() {
             Draw, design, and brainstorm together on an infinite canvas with your team, no matter where they are.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="px-8 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-lg flex items-center">
+            <Link href={"/signin"} className="px-8 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-lg flex items-center">
               Start Drawing Now
               <svg 
                 xmlns="http://www.w3.org/2000/svg" 
@@ -34,7 +35,7 @@ export default function HeroSection() {
                   d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" 
                 />
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
         

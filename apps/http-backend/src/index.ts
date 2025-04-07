@@ -5,9 +5,11 @@ import { CustomRequest, isAuthenticated } from "./middleware";
 import { CreateRoomSchema, CreateUserSchema, SigninSchema } from "@repo/common/types";
 import { client } from "@repo/db/client";
 import bcrypt from "bcrypt";
+import cors from "cors";
 
 const app = express();
 
+app.use(cors());
 app.use(express.json());
 
 app.post("/signup", async (req, res) => {

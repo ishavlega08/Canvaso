@@ -42,12 +42,12 @@ export default function Navbar() {
         
         <div className="flex items-center space-x-3">
           <ThemeToggle />
-          <button className="hidden md:inline-flex px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+          <Link href={"/signin"} className="hidden md:inline-flex px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
             Log in
-          </button>
-          <button className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+          </Link>
+          <Link href={"/signup"} className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
             Get Started
-          </button>
+          </Link>
           
           {/* Mobile menu button */}
           <button 
@@ -90,9 +90,9 @@ export default function Navbar() {
             >
               How it works
             </Link>
-            <button className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
+            <Link href={"/signin"} className="w-full px-4 py-2 border border-gray-300 dark:border-gray-700 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
               Log in
-            </button>
+            </Link>
           </div>
         </div>
       )}
